@@ -1,0 +1,5 @@
+FROM golang:latest
+WORKDIR /go/src/github.com/tensorchen/Meizhi/
+COPY . .
+RUN go build -o app .
+
